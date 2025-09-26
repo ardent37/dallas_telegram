@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirección Telegram</title>
+  <script>
+    window.onload = function() {
+      // Intenta abrir el enlace en una nueva pestaña
+      var win = window.open("https://t.me/+U3v7NGhiUlk5NDAx", "_blank");
+
+      // Si el navegador lo bloquea, muestra un botón de fallback
+      if (!win) {
+        document.getElementById("fallback").style.display = "block";
+      }
+    };
+  </script>
+</head>
+<body>
+  <h2>Redirigiendo a Telegram...</h2>
+  <div id="fallback" style="display:none; margin-top:20px;">
+    <p>Si no se abrió automáticamente, haz clic aquí:</p>
+    <a href="https://t.me/+U3v7NGhiUlk5NDAx" target="_blank" 
+       style="font-size:20px; color:white; background:#0088cc; padding:12px 20px; border-radius:8px; text-decoration:none;">
+       👉 Abrir en Telegram
+    </a>
+  </div>
+</body>
+</html>
